@@ -1,3 +1,5 @@
+$firstLetterColor: #351c4d;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +25,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
   }
 
 #createdBy {
@@ -41,7 +43,6 @@
     height: 80vmin;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: whitesmoke;
     margin: 0 3px;
     position: relative;
@@ -50,20 +51,87 @@
   
 }
 
+.headerPersonal {
+  align-self: center;
+}
+
+
+.headerProjects {
+  align-self: center;
+}
+
+.headerProfessional {
+  align-self: center;
+}
+
 .personal {
     background-color: #ff7e5f;
+}  
 
-  
-    &:hover {
+.hoverPersonal:hover {
     background: url('img/personal.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-  }
 }
 
+.flipPersonal {
+  display: none;
+  flex-direction: row;
+
+  h1 {
+    width: 100%;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+  }
+
+  p {
+    width: 75%;
+    color: white;
+    justify-self: center;
+    position: fixed;
+    top: 100px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+}
+
+.projects {
+    background-color: #feb47b;
+}
+
+.hoverProjects:hover {
+  background: url('img/projects.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.professional {
+    background-color: #765258;
+}
+
+.hoverProfessional:hover {
+  background: url('img/professional.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
 .grow {
-  flex-grow: 10
+  flex-grow: 10;
 }
 
 .shrink {
@@ -71,30 +139,14 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
-  
 
-.projects {
-    background-color: #feb47b;
-
-    &:hover {
-    background: url('img/projects.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
+span {
+  color: $firstLetterColor;
 }
 
-.professional {
-    background-color: #765258;
-  
-    &:hover {
-    background: url('img/professional.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 5px;
 }
-
-
   
   

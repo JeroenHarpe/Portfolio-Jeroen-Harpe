@@ -36,7 +36,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
 }
 
 #createdBy {
@@ -62,9 +62,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: whitesmoke;
   margin: 0 3px;
   position: relative;
@@ -72,15 +69,91 @@ a {
   cursor: pointer;
 }
 
+.headerPersonal {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.headerProjects {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.headerProfessional {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .personal {
   background-color: #ff7e5f;
 }
 
-.personal:hover {
+.hoverPersonal:hover {
   background: url("img/personal.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.flipPersonal {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flipPersonal h1 {
+  width: 100%;
+}
+
+.flipPersonal img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 100px;
+  left: 50px;
+}
+
+.flipPersonal p {
+  width: 75%;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  position: fixed;
+  top: 100px;
+}
+
+.flipPersonal ul {
+  list-style: none;
+}
+
+.projects {
+  background-color: #feb47b;
+}
+
+.hoverProjects:hover {
+  background: url("img/projects.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.professional {
+  background-color: #765258;
+}
+
+.hoverProfessional:hover {
+  background: url("img/professional.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .grow {
@@ -98,25 +171,12 @@ a {
   text-orientation: upright;
 }
 
-.projects {
-  background-color: #feb47b;
+span {
+  color: #351c4d;
 }
 
-.projects:hover {
-  background: url("img/projects.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.professional {
-  background-color: #765258;
-}
-
-.professional:hover {
-  background: url("img/professional.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 5px;
 }
 /*# sourceMappingURL=main.css.map */
