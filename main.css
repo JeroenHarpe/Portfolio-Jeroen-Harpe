@@ -39,12 +39,22 @@ a {
   width: 80%;
 }
 
+#createdBy {
+  height: 10vmin;
+  text-align: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: fixed;
+  top: 0.8em;
+  font-family: 'Courgette', cursive;
+}
+
 .card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   height: 80vmin;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,36 +67,53 @@ a {
           align-items: center;
   color: whitesmoke;
   margin: 0 3px;
+  position: relative;
+  opacity: 0;
   cursor: pointer;
 }
 
-#personal {
+.personal {
   background-color: #ff7e5f;
 }
 
-#personal:hover {
+.personal:hover {
   background: url("img/personal.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-#projects {
+.grow {
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+}
+
+.shrink {
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.projects {
   background-color: #feb47b;
 }
 
-#projects:hover {
+.projects:hover {
   background: url("img/projects.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-#professional {
+.professional {
   background-color: #765258;
 }
 
-#professional:hover {
+.professional:hover {
   background: url("img/professional.jpg");
   background-size: cover;
   background-repeat: no-repeat;
