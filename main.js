@@ -29,13 +29,14 @@ const hProjects = document.querySelector('.headerProjects');
 const hProfessional = document.querySelector('.headerProfessional');
 
 const flipPersonal = document.querySelector('.flipPersonal');
+const flipProjects = document.querySelector('.flipProjects');
 
 personal.addEventListener('click', openPersonal )
 projects.addEventListener('click', openProjects )
 professional.addEventListener('click', openProfessional )
 
 function openPersonal(){
-  //Animations
+  //Animations Front
 personal.classList.remove('hoverPersonal');
 personal.classList.add('grow');
 projects.classList.add('shrink');
@@ -47,6 +48,7 @@ hPersonal.classList.remove('headerPersonal');
 
 //Flipside
 flipPersonal.style.display = 'flex';
+flipPersonal.classList.add('flex');
 
 anime({
   targets: '.myImg',
@@ -54,12 +56,19 @@ anime({
   delay: 500,
   rotate: [0, 360],
   duration: 2500
- 
+});
+
+anime({
+  targets: '.hobbies',
+  translateX: [270, 0],
+  delay: anime.stagger(100),
+  easing: 'easeInQuart',
 });
 
 }
 
 function openProjects(){
+  // Animations Front
 projects.classList.remove('hoverProjects');
 projects.classList.add('grow');
 personal.classList.add('shrink');
@@ -67,7 +76,12 @@ professional.classList.add('shrink');
 projects.classList.remove('shrink');
 personal.classList.remove('grow');
 professional.classList.remove('grow');
-hProjects.classList.remove('headerProjects')
+hProjects.classList.remove('headerProjects');
+
+//Flipside
+flipProjects.style.display = 'flex';
+flipProjects.classList.add('flex');
+
 }
 
 function openProfessional(){
