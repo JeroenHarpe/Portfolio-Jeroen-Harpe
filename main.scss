@@ -4,6 +4,10 @@ $firstLetterColor: #351c4d;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+  html {
+    scroll-behavior: smooth;
   }
   
   body {
@@ -125,6 +129,7 @@ $firstLetterColor: #351c4d;
   justify-items: center;
   text-align: center;
   width: 100%;
+  cursor: default;
 
   img {
     border-radius: 50%;
@@ -161,11 +166,11 @@ $firstLetterColor: #351c4d;
   flex-direction: column;
   justify-items: center;
   text-align: center;
-  // height: 1000px;
   overflow-y: scroll;
   width: 100%;
   padding-top: 40px;
   padding-right: 10%;
+  cursor: default;
 
   h3 {
    width: 100%;
@@ -193,20 +198,17 @@ $firstLetterColor: #351c4d;
   height: 80vh;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: $firstLetterColor; 
   border-radius: 10px;
   height: 30px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
@@ -229,9 +231,9 @@ $firstLetterColor: #351c4d;
   text-align: center;
   width: 100%;
   padding-right: 10%;
-  overflow-y: scroll;
   position: relative;
-  transition: all 1s;
+  overflow-y: scroll;
+  cursor: default;
 }
 
 .hoverProfessional:hover {
@@ -263,8 +265,73 @@ hr {
   color: $firstLetterColor;
 }
 
-
-.transform {
-  transform: translateY(220px)
+.career {
+  width: 90%;
+  margin: 50px 0;
 }
 
+.skills {
+  margin: 50px 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  h2 {
+    width: 100%;
+  }
+
+  div {
+    flex: 1;
+    margin: 5px;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+  }
+}
+
+.allcards {
+  margin: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  background: #ff7e5f;
+  border-radius: 5px;
+
+  &:nth-child(odd){
+    background: #feb47b;
+  }
+
+  .fas {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+}
+
+.preloader {
+  background: white;
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #feb47b; 
+  border-top: 16px solid #ff7e5f; 
+  border-bottom: 16px solid #765258;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  align-self: center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

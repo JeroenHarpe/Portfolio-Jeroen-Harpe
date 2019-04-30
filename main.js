@@ -1,3 +1,8 @@
+window.onload = function(){
+  setTimeout(function(){
+    document.querySelector('.preloader').style.display = 'none';
+
+
 
 anime({
   targets: '.card',
@@ -58,6 +63,8 @@ hPersonal.classList.remove('headerPersonal');
 //Flipside
 flipPersonal.style.display = 'flex';
 flipPersonal.classList.add('flex');
+flipProjects.style.display = 'none';
+flipProfessional.style.display = 'none';
 
 anime({
   targets: '.myImg',
@@ -90,6 +97,8 @@ hProjects.classList.remove('headerProjects');
 //Flipside
 flipProjects.style.display = 'flex';
 flipProjects.classList.add('flex');
+flipPersonal.style.display = 'none';
+flipProfessional.style.display = 'none';
 
 }
 
@@ -107,11 +116,16 @@ hProfessional.classList.remove('headerProfessional')
 //Flipside
 flipProfessional.style.display = 'flex';
 flipProfessional.classList.add('flex');
+flipPersonal.style.display = 'none';
+flipProjects.style.display = 'none';
+
+anime({
+  targets: '.icon',
+  translateY: [270, 0],
+  delay: anime.stagger(100),
+});
 }
 
 
-
-
-
-
-
+}, 2500);  
+};
