@@ -20,6 +20,14 @@ anime({
   delay: 4000
 })
 
+anime({
+  targets: '.icons',
+  translateY: [300, 0],
+  opacity: [0, 1],
+  duration: 2000,
+  delay: 4000
+})
+
 const personal = document.querySelector('.personal');
 const projects = document.querySelector('.projects');
 const professional = document.querySelector('.professional');
@@ -30,6 +38,7 @@ const hProfessional = document.querySelector('.headerProfessional');
 
 const flipPersonal = document.querySelector('.flipPersonal');
 const flipProjects = document.querySelector('.flipProjects');
+const flipProfessional = document.querySelector('.flipProfessional');
 
 personal.addEventListener('click', openPersonal )
 projects.addEventListener('click', openProjects )
@@ -85,6 +94,7 @@ flipProjects.classList.add('flex');
 }
 
 function openProfessional(){
+  // Animations Front
 professional.classList.remove('hoverProfessional');
 professional.classList.add('grow');
 personal.classList.add('shrink');
@@ -93,4 +103,15 @@ professional.classList.remove('shrink');
 projects.classList.remove('grow');
 personal.classList.remove('grow');
 hProfessional.classList.remove('headerProfessional')
+
+//Flipside
+flipProfessional.style.display = 'flex';
+flipProfessional.classList.add('flex');
 }
+
+
+
+
+
+
+

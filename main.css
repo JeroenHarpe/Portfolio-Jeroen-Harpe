@@ -23,6 +23,15 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .container {
@@ -47,6 +56,38 @@ a {
   position: fixed;
   top: 0.8em;
   font-family: 'Courgette', cursive;
+}
+
+.icons {
+  font-size: 6vmin;
+  text-align: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: fixed;
+  bottom: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.fab {
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+  opacity: 1;
+}
+
+.fa-github:hover {
+  color: #211F1F;
+  opacity: 1;
+}
+
+.fa-stack-overflow:hover {
+  color: #F48024;
+  opacity: 1;
 }
 
 .card {
@@ -150,24 +191,30 @@ a {
 
 .flipProjects {
   display: none;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   justify-items: center;
   text-align: center;
   overflow-y: scroll;
   width: 100%;
   padding-top: 40px;
+  padding-right: 10%;
 }
 
 .flipProjects h3 {
   width: 100%;
+  margin: 10px;
+}
+
+.flipProjects p {
+  padding: 5px;
 }
 
 .flipProjects img {
-  height: 70%;
-  width: 70%;
+  height: auto;
+  width: 100%;
   border: black 1px solid;
   border-radius: 5px;
   -ms-grid-column-align: center;
@@ -210,6 +257,22 @@ a {
   background-color: #765258;
 }
 
+.flipProfessional {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  padding-right: 10%;
+  overflow-y: scroll;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 .hoverProfessional:hover {
   background: url("img/professional.jpg");
   background-size: cover;
@@ -239,8 +302,12 @@ span {
   color: #351c4d;
 }
 
-h1 {
-  font-size: 1.5em;
-  letter-spacing: 5px;
+hr {
+  color: #351c4d;
+}
+
+.transform {
+  -webkit-transform: translateY(220px);
+          transform: translateY(220px);
 }
 /*# sourceMappingURL=main.css.map */
