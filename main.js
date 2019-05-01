@@ -69,7 +69,7 @@ flipProfessional.style.display = 'none';
 anime({
   targets: '.myImg',
   translateX: [-500, 0],
-  delay: 500,
+  delay: 1000,
   rotate: [0, 360],
   duration: 2500
 });
@@ -127,5 +127,5 @@ anime({
 }
 
 
-}, 2500);  
+}, 2000);  
 };
