@@ -241,6 +241,7 @@ $breakpoint-tablet: 770px;
 
   div {
     margin: 1em 0;
+    border-bottom: solid white 1px;
   }
 
   span {
@@ -340,7 +341,8 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 50px auto;
-  color: black;
+  color: white;
+  font-weight: bold;
 
   h2 {
     width: 100%;
@@ -357,6 +359,7 @@ hr {
     &:nth-child(odd) {
     background: #ff7e5f;
     }
+
   }
 
 
@@ -375,7 +378,7 @@ hr {
   background: #ff7e5f;
   border-radius: 5px;
   box-shadow: 4px 2px black; 
-  color: black;
+  color: white;
 
   &:nth-child(odd){
     background: #feb47b;

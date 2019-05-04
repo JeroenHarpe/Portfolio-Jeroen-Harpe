@@ -287,6 +287,7 @@ h1 {
 
 .flipProjects div {
   margin: 1em 0;
+  border-bottom: solid white 1px;
 }
 
 .flipProjects span {
@@ -396,7 +397,8 @@ hr {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 50px auto;
-  color: black;
+  color: white;
+  font-weight: bold;
 }
 
 .skills h2 {
@@ -435,7 +437,7 @@ hr {
   border-radius: 5px;
   -webkit-box-shadow: 4px 2px black;
           box-shadow: 4px 2px black;
-  color: black;
+  color: white;
 }
 
 .allcards:nth-child(odd) {
