@@ -111,6 +111,10 @@ $breakpoint-tablet: 770px;
   color: #F48024;
   opacity: 1;
 }
+
+.fa-codepen:hover {
+  opacity: 1;
+}
 .card {
     flex: 1;
     transition: all 1s;
@@ -188,6 +192,10 @@ $breakpoint-tablet: 770px;
     margin: auto;
     align-self: flex-start;
     padding: 10px;
+
+    @media (max-width: $breakpoint-tablet) {
+      width: 100%;
+      }
   }
 
   ul {
@@ -203,7 +211,20 @@ $breakpoint-tablet: 770px;
     align-self: flex-end;
     padding: 0px 10px;
   }
+}
 
+.scrollDown {
+  display: none;
+
+  @media (max-width: $breakpoint-tablet) {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    }
 }
 
 .projects {
@@ -220,6 +241,11 @@ $breakpoint-tablet: 770px;
   height: 100%;
   padding: 20px 5%;
   cursor: default;
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    }
 
   h3 {
    width: 100%;
@@ -399,7 +425,8 @@ hr {
   justify-content: center;
   
   @media (max-width: $breakpoint-tablet) {
-    align-self: baseline
+    align-content: baseline;
+    top: 40px;
     }
 }
 
