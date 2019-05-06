@@ -51,6 +51,7 @@ h1 {
 @media (max-width: 770px) {
   h1 {
     height: auto;
+    font-size: 3em;
   }
 }
 
@@ -461,6 +462,13 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 770px) {
+  .preloader {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
 }
 
 .loader {

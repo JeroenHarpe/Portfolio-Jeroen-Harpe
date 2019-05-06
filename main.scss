@@ -43,6 +43,7 @@ $breakpoint-tablet: 770px;
 
     @media (max-width: $breakpoint-tablet) {
       height: auto;
+      font-size: 3em;
       }
   }
   
@@ -123,9 +124,7 @@ $breakpoint-tablet: 770px;
     cursor: pointer;
     padding: 10px;
 
-    // h1 {
-    //   display: block;
-    // }
+
 
     @media (max-width: $breakpoint-tablet) {
       height: 100vh;
@@ -398,6 +397,10 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
+  
+  @media (max-width: $breakpoint-tablet) {
+    align-self: baseline
+    }
 }
 
 .loader {
@@ -409,6 +412,7 @@ hr {
   height: 120px;
   animation: spin 2s linear infinite;
   align-self: center;
+
 }
 
 @keyframes spin {
