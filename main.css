@@ -269,7 +269,7 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -324,6 +324,11 @@ h1 {
   -ms-grid-column-align: center;
       justify-self: center;
   display: block;
+  opacity: 0.8;
+}
+
+.flipProjects img:hover {
+  opacity: 1;
 }
 
 .flipProjects div {

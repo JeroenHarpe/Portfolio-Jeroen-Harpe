@@ -36,6 +36,7 @@ anime({
 const personal = document.querySelector('.personal');
 const projects = document.querySelector('.projects');
 const professional = document.querySelector('.professional');
+const scrollDown = document.querySelector('.scrollDown');
 
 const hPersonal = document.querySelector('.headerPersonal');
 const hProjects = document.querySelector('.headerProjects');
@@ -59,6 +60,7 @@ personal.classList.remove('shrink');
 projects.classList.remove('grow');
 professional.classList.remove('grow');
 hPersonal.classList.remove('headerPersonal');
+scrollDown.style.display = 'none';
 
 //Flipside
 flipPersonal.style.display = 'flex';
