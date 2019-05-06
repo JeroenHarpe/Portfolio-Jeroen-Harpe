@@ -513,7 +513,7 @@ hr {
   .preloader {
     -ms-flex-line-pack: baseline;
         align-content: baseline;
-    top: 40px;
+    top: 10px;
   }
 }
 
